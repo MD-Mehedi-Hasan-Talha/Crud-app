@@ -3,7 +3,6 @@ import Classes from "../style/Home.module.css";
 
 function Home() {
   const { loading, error, data } = useData("user");
-  // console.log(data);
 
   return (
     <>

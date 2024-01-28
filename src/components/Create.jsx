@@ -1,4 +1,4 @@
-import { child, get, getDatabase, ref } from "firebase/database";
+import { getDatabase, ref, set } from "firebase/database";
 import { useState } from "react";
 import "../../firebase";
 import Classes from "../style/Create.module.css";
@@ -14,9 +14,8 @@ const initialState = {
 
 function Create() {
   const [state, setState] = useState(initialState);
-  //   const [data, setData] = useState();
   const database = getDatabase();
-  const databaseRef = ref(database);
+  const databaseRef = ref(database, `user/lkjhg`);
 
   const { first_name, last_name, email_addr, password } = state;
 
@@ -26,17 +25,13 @@ function Create() {
     if (!first_name || !last_name || !email_addr || !password) {
       console.log("You are not provide a value.");
     } else {
-      await get(child(databaseRef, `result`))
-        .then((snapshot) => {
-          if (snapshot.exists()) {
-            console.log(snapshot.val());
-          } else {
-            console.log("No data available");
-          }
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+      await set(databaseRef, {
+        id: "5",
+        first_name: first_name,
+        last_name: last_name,
+        email_addr: email_addr,
+        password: password,
+      });
     }
   };
 
