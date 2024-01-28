@@ -30,7 +30,7 @@ function useData(databaseLocation) {
     }
 
     fetchData();
-  }, []);
+  }, [databaseLocation]);
 
   return {
     loading,
