@@ -1,0 +1,74 @@
+/*========================
+    Table Style
+========================*/
+
+table, th, td{
+    border: 2px solid#96D4D4;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table{
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+th{
+    background: #161616;
+    color: #f8f9fa;
+}
+
+.main_section_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 50vh;
+}
+
+.title{
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.title h1{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+td button{
+    margin: 0 5px;
+    padding: 7px;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1.5px solid;
+    transition: color 0.2s;
+}
+
+td button:first-child{
+    background: transparent;
+    color: #ff0000;
+    border-color: #ff0000;
+}
+
+td button:first-child:hover{
+    background: #ff0000;
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+td button:last-child{
+    background: transparent;
+    color: #067e06;
+    border-color: #067e06;
+}
+
+td button:last-child:hover{
+    background: #067e06;
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}

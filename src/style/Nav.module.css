@@ -1,0 +1,61 @@
+/*========================
+    Navbar Style
+========================*/
+.nav{
+    width: 100%;
+    background: #007bff;
+}
+
+.nav_area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Area Style */
+
+.logo_area{
+    padding: 20px;
+    width: 35%;
+
+}
+
+.logo_area h1 {
+    color: #f8f9fa;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+/* Nav Area Style */
+
+.navbar{
+    width: 65%;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 6px;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.navbar ul .active{
+    background: #f8f9fa;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #f8f9fa;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.navbar ul .active a{
+    color: #007bff;
+}
