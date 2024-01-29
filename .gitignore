@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+crud
+crud.pub
+
 
 # Editor directories and files
 .vscode/*
